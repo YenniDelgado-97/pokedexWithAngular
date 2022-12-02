@@ -6,11 +6,17 @@
         align-items: center;
         padding:15px 20px;
         background-color: #FA8072;
+        border-radius: 30px;
 
         input{
             width: 95%;
-            background-color: none;
+            background-color: #FA8072 ;
             border: none;
+            font-size:18px ;
+            
+            &::placeholder{
+                color: var(--negro)
+            }
         }
     }
 }

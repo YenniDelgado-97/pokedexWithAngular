@@ -1,16 +1,21 @@
 :host{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding-top: 20px;
     .pokemon{
         position: relative;
         display: flex;
         align-items: center;
+        justify-content:center;
         width: 50% - 10;
         padding:20px ;
         height: 175px;
+        margin-bottom:10px;
         background: var(--red);
         border-radius:20px;
+        text-decoration: none;
+        color: var(--primary-color);
         
         &__image{
             position:relative;
@@ -19,16 +24,24 @@
             display: flex;
             align-items: center;
             flex-direction: column;
-            padding: 100px;
-            padding-top: 30px;
-            right: 20px;
-            bottom: 20px;
+            justify-content: center;
+
+
+            &__image{
+                height: 100px;
+                width:100px
+            }
         }
         &__status{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             h2{
                 font-size:25px;
                 font-style:normal;
                 font-weight: 800;
+                text-transform: capitalize;
                 margin-bottom: 10px;
                 padding-top: 10px;
             }
@@ -38,11 +51,12 @@
             }
                 li{
                     background: var(--primary-color);
-                    font-size: 15px;
+                    color: black;
+                    font-size: 18px;
                     display:flex;
                     justify-content: center;
                     align-items:center;
-                    margin-left: 20px;
+                    
                     border-radius: 10px;
                     width: 60px;
                     margin-bottom: 10px;

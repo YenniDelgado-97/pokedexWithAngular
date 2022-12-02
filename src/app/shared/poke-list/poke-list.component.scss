@@ -1,67 +1,70 @@
+
 :host{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding-top: 20px;
-    .pokemon{
-        position: relative;
+    .list{
         display: flex;
-        align-items: center;
-        justify-content:center;
-        width: 50% - 10;
-        padding:20px ;
-        height: 175px;
-        margin-bottom:10px;
-        background: var(--red);
-        border-radius:20px;
-        text-decoration: none;
-        color: var(--primary-color);
-        
-        &__image{
-            position:relative;
-            height: 90px;
-            width:90px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-top: 20px;
+        .pokemon{
+            position: relative;
             display: flex;
             align-items: center;
-            flex-direction: column;
-            justify-content: center;
-
-
+            justify-content:center;
+            width: 50% - 10;
+            padding:20px ;
+            height: 175px;
+            margin-bottom:10px;
+            background: var(--red);
+            border-radius:20px;
+            text-decoration: none;
+            color: var(--primary-color);
+            
             &__image{
-                height: 100px;
-                width:100px
+                position:relative;
+                height: 90px;
+                width:90px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+
+
+                &__image{
+                    height: 100px;
+                    width:100px
+                }
             }
-        }
-        &__status{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            h2{
-                font-size:25px;
-                font-style:normal;
-                font-weight: 800;
-                text-transform: capitalize;
-                margin-bottom: 10px;
-                padding-top: 10px;
-            }
-            ul{
+            &__status{
                 display: flex;
                 flex-direction: column;
-            }
-                li{
-                    background: var(--primary-color);
-                    color: black;
-                    font-size: 18px;
-                    display:flex;
-                    justify-content: center;
-                    align-items:center;
-                    
-                    border-radius: 10px;
-                    width: 60px;
+                justify-content: center;
+                align-items: center;
+                h2{
+                    font-size:25px;
+                    font-style:normal;
+                    font-weight: 800;
+                    text-transform: capitalize;
                     margin-bottom: 10px;
-
+                    padding-top: 10px;
                 }
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                }
+                    li{
+                        background: var(--primary-color);
+                        color: black;
+                        font-size: 18px;
+                        display:flex;
+                        justify-content: center;
+                        align-items:center;
+                        
+                        border-radius: 10px;
+                        width: 60px;
+                        margin-bottom: 10px;
+
+                    }
+            }
         }
     }
 }

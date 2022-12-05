@@ -11,6 +11,25 @@
         <img
         [src]="pokemon[0].sprites.other.dream_world.front_default"
         [alt]="pokemon[0].name">
+
+        <article class ="pokemon__status__statistics">
+            <section>
+                <h3>Estadísticas</h3>
+                <ol>
+                    <li *ngFor="let value of pokemon[0].stats">
+                        {{value.stat.name}}
+                        <strong>
+                            {{ value.base_stat}}
+                        </strong>
+                    </li>
+                </ol>
+            </section>
+
+            <a [routerLink]="['']" class="btn btn__secondary">
+                volver
+            </a>
+
+        </article>
     </section>
 
 </main>

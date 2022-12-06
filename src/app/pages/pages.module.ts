@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { RoutingModule } from './routing.module';
 import { DetailsComponent } from './details/details.component';
 import { SharedModule } from '../shared/shared.module';
+import { TeamComponent } from './team/team.component';
 
 
 
@@ -15,6 +16,10 @@ import { SharedModule } from '../shared/shared.module';
   declarations: [
     HomeComponent,
     DetailsComponent,
+    TeamComponent,
+    
+
+    
   ],
   imports: [
     CommonModule,

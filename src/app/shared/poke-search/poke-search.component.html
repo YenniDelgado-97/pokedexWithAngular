@@ -1,4 +1,9 @@
 <form>
     <input type="text" #input (keyup)="search(input.value)" placeholder="Buscar Pokemon">
     <img src="../../../assets/search.png" alt="buscar pokemon">
+
 </form>
+
+<a [routerLink]="['team']" class="btn btn__secondary">
+    Equipo pokemon
+</a>

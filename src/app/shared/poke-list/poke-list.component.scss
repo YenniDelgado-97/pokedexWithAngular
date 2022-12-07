@@ -67,4 +67,43 @@
             }
         }
     }
+@media only screen and (min-width:320px) and (max-width: 998px){
+
+    .list{
+
+        
+        flex-direction: column;
+        padding-left: 150px;
+
+        .pokemon{
+            width: 40%;
+            height: 150px;
+
+            &__image{
+                width: 70px;
+                height: 70px;
+
+                &__image{
+                    width:80px;
+                    height:80px;
+                }
+            }
+
+            &__status{
+                h2{
+                    font-size:20px
+                }
+
+                ul{
+                    li{
+                        font-size: 15px;
+                    }
+                }
+            }
+        
+            
+        }
+    }
+
+}
 }

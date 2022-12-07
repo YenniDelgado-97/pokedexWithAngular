@@ -26,14 +26,14 @@
         }
       }
     }
-@media only screen and (max-width: 999px) {
+@media only screen and (min-width:320px) and (max-width: 998px) {
     .menu{
         position: fixed;
         right: -280px;
         top: 64px;
         background: var(--red);
-        width: 200px;
-        height: 30%;
+        width: 150px;
+        height: 20%;
 
         ul{
             padding: 0;

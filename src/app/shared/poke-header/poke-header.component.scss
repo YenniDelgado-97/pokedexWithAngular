@@ -6,11 +6,11 @@
 
       .menu{
         margin-top: 12px;
-        ul{
+        ul {
             padding: 0;
             margin:0;
 
-            a{
+            a {
                 list-style-type: none;
                 color: white;
                 display:inline-block;
@@ -29,8 +29,8 @@
 @media only screen and (max-width: 999px) {
     .menu{
         position: fixed;
-        right: 0px;
-        top:64px;
+        right: -280px;
+        top: 64px;
         background: var(--red);
         width: 200px;
         height: 30%;
@@ -41,31 +41,48 @@
 
             a{
                 display:block;
-            text-align: right;
-            margin: 0;
-            
-            border-bottom: 1px solid #fff;
+                text-align: right;
+                margin: 0;
+                border-bottom: 1px solid #fff;
             }
         }
       }
     
-    .menu_icon{
+    .menu__icon {
         display: inline-block;
         position: relative;
         right: 0;
-        top:0px
-        
-
-        span{
-            width: 40px;
-            height: 2px;
+        top:15px;
+        span {
+            width: 35px;
+            height: 3px;
             background: #fff;
+            display:block;
+            transition:0.4s ease-in-out;
             
         }
+        :nth-child(2){
+            margin: 8px 0px;
 
-
+        }
         
-    }        
+    }
+    .menu__icon__Class span:nth-child(2){
+        display: none;
+    }
+    .menu__icon__Class span:nth-child(1){
+        transform: rotate(40deg);
+    }
+    .menu__icon__Class span:nth-child(3){
+        transform: rotate(-40deg);
+        margin-top:-3px;
+    }
+    .menuClass{
+        right: 0;
+        transition: 0.4s ease-in-out;
+    }
+
+    
     }
 
     

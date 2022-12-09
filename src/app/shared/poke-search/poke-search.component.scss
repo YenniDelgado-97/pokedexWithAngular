@@ -8,9 +8,9 @@
         background-color: #FA8072;
         border-radius: 30px;
         margin-top: 30px;
-
+        width:90%;
         input{
-            width: 95%;
+            width: 80%;
             background-color: #FA8072 ;
             border: none;
             font-size:18px ;
@@ -42,8 +42,8 @@
     @media only screen and (min-width:320px) and (max-width: 998px){
 
         form{
-
-            width: fit-content
+            padding: 5px;
+            // width: fit-content
 
         }
     }

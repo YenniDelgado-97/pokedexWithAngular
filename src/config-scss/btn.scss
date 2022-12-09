@@ -1,0 +1,20 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    padding: 20px 0;
+    border-radius: 10px;
+    text-decoration: none;
+
+    &__primary {
+        color : white;
+        background: var(--primary-color);
+    }
+
+    &__secondary {
+        color: white;
+        background: var(--secondary-color);
+    }
+}
